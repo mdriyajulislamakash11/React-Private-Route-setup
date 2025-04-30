@@ -19,6 +19,12 @@ const Navbar = () => {
         {" "}
         <NavLink to="/register">Register</NavLink>{" "}
       </li>
+
+      {user && (
+        <li>
+          <NavLink to="/order">Orders</NavLink>
+        </li>
+      )}
     </>
   );
 
